@@ -1,7 +1,7 @@
 <?php
 
-use App\Livewire\Counter;
 use Illuminate\Support\Facades\Route;
+use Livewire\Volt\Volt;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', Counter::class);
+Volt::route('/', 'counter');

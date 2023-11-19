@@ -1,3 +1,14 @@
+<?php
+
+use function Livewire\Volt\{state};
+
+state(['count' => 0]);
+ 
+$increment = fn () => $this->count++;
+$decrement = fn () => $this->count--;
+
+?>
+
 <div class="main-content">
     <section class="section">
         <div class="section-header">
